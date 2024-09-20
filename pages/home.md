@@ -1,14 +1,14 @@
 ---
 layout: home
 permalink: "/"
-title: "Curate is a premium portfolio for <strong>Jekyll.</strong>"
-description: "Showcase your projects, work or case studies in style with this markdown powered portfolio theme for Jekyll."
-meta_description: "Jekyll Curate is a premium Jekyll blog theme"
-meta_title: Jekyll Curate - Premium Portfolio Theme
+title: "Aanya Rustogi"
+description: "Software engineer with expertise in machine learning, generative AI and embedded systems."
+meta_description: ""
+meta_title: 
 subscribe: false
 
 projects:
-  heading: "" # "Projects"
+  heading: ""
   sub_heading: "" # "A collection of our recent work"
   limit: 4
   sort: date # date | weight

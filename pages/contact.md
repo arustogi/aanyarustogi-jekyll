@@ -6,6 +6,5 @@ permalink: "/contact/"
 
 ## Contact Info
 
-- **Email:** <a href="mailto:example@example.com">example@example.com</a>
-- **Phone:** +61 0417 123 XXX
-- **Address:** Clem Jones Promenade, South Brisbane QLD 4101
+- **Email:** <a href="mailto:arustogi@andrew.cmu.edu">arustogi@andrew.cmu.edu</a>
+- **Phone:** +1 408 504 3162
