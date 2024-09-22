@@ -6,13 +6,12 @@ date: 2024-05-21
 weight: 4
 permalink: /projects/project-4
 thumbnail: "/assets/images/gen/projects/Academic1.webp"
-image: "/assets/images/gen/projects/project-4-1.webp"
+image: "/assets/images/gen/projects/Academic3.webp"
 categories: ["Topics: Development, AI, Education"]
 role: "Full Stack Developer"
 gallery:
-  - image: "/assets/images/gen/projects/project-4-1.webp"
-  - image: "/assets/images/gen/projects/project-4-4.webp"
-  - image: "/assets/images/gen/projects/project-4-7.webp"
+  - image: "/assets/images/gen/projects/Academic2.png"
+  - image: "/assets/images/gen/projects/Academic3.webp"
 ---
 ## Overview
 **Academic Resource Optimizer** is a cutting-edge web application designed to revolutionize how students manage their study schedules. By leveraging the power of machine learning, document embeddings, and a serverless architecture, the app generates personalized and contextually relevant study plans. These plans are intelligently created by analyzing the content of uploaded academic materials and aligning tasks with upcoming deadlines.
@@ -62,9 +61,10 @@ Powered by AWS Lambda, DynamoDB, and API Gateway, the system ensures scalability
 ## Visual Gallery
 Explore the sleek design and functionality of **Academic Resource Optimizer**:
 
-{% for image in page.gallery %}
-![Project Image]({{ image }})
-{% endfor %}
+<div style="display: flex; justify-content: space-between;">
+  <img src="/assets/images/gen/projects/Academic4.webp" />
+  
+</div>
 
 ---
 
