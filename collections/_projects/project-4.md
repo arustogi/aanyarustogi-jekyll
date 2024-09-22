@@ -7,7 +7,7 @@ weight: 4
 permalink: /projects/project-4
 thumbnail: "/assets/images/gen/projects/Academic1.webp"
 image: "/assets/images/gen/projects/project-4-1.webp"
-categories: ["Development","AI", "Education"]
+categories: ["Topics: Development, AI, Education"]
 role: "Full Stack Developer"
 gallery:
   - image: "/assets/images/gen/projects/project-4-1.webp"

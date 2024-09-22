@@ -16,6 +16,15 @@ body_classes: page-project
     .container {
       width: 100%; /* Ensure the container takes full width */
     }
+    .content {
+      text-align: left; /* Align content text and bullets to the left */
+      margin: 0 auto; /* Ensure the content is centered inside the container */
+      max-width: 800px; /* Optional: Limit content width for better readability */
+    }
+
+    .content ul {
+      list-style-position: inside; /* Ensure bullets remain left-aligned */
+    }
   </style>
 </head>
 
@@ -23,7 +32,7 @@ body_classes: page-project
   <div class="container">
     {% if page.gallery %}
     <div class="gallery gallery-two-column">
-      {% for item in page.gallery limit: limit %}
+      {% for item in page.gallery limit: 2 %}
       <div class="gallery-item">
         <div class="gallery-image"><img src="{{ item.image | relative_url }}" /></div>
         <div class="gallery-caption">{{ item.caption }}</div>
@@ -41,14 +50,12 @@ body_classes: page-project
         <h1>{{ page.title }}</h1>
       </div>
       {% endif %}
-      
+      <p> Click here for <a href="https://github.com/arustogi" target="_blank" class="github-link" style="color: blue; text-decoration: underline;">GitHub</a>.</p>
       {% if page.categories %}
       <div class="project-categories">{% include framework/categories-badges.html categories=page.categories %}</div>
       {% endif %}
-
-      <hr />
-
       {% if page.date %}
+      <hr />
       <div class="project-date"><strong>Date </strong><span>{{ page.date | date_to_long_string }}</span></div>
       {% endif %}
       
@@ -60,10 +67,11 @@ body_classes: page-project
       <div class="project-role"><strong>Role </strong><span>{{ page.role }}</span></div>
       {% endif %}
 
-      <hr />
-
-      <!-- Content section -->
-      <div class="content">{{ content }}</div>
+      
+      <div class="content">
+  
+        {{ content }}
+      </div>
     </div>
 
   </div>
