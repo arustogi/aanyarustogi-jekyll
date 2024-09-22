@@ -13,7 +13,7 @@ Born and raised in the Silicon Valley, I’ve always been surrounded by technolo
 This balance has been a guiding principle in my academic journey at Carnegie Mellon University, where I’ve explored the intersections of software engineering, machine learning, and embedded systems. Through a combination of creativity and structured problem-solving, I’ve been able to take on projects that challenge me to think in new ways while applying disciplined technical execution. One of the most pivotal experiences was developing a personal project, where I explored new technologies like cloud computing and AI for the first time. This project showed me how creative ideas can be brought to life through thoughtful design and methodical execution, reinforcing my belief that success comes from striking the right balance between innovation and precision.
 As I look toward the future, I’m excited to continue blending creativity and discipline in all aspects of my work—whether it’s through building software, exploring the potential of AI, or taking on new challenges that require both imagination and technical expertise. This balance has shaped my journey so far, and I believe it will continue to guide me as I explore new opportunities to make a meaningful impact.
 
-
-
-
-![Design In Figma]({{ "/assets/images/images/aboutme/bhangra 1" | relative_url }})
+<div style="display: flex; justify-content: space-between;">
+  <img src="/assets/images/aboutme/bhangra_2.jpg" alt="Image 1" style="width:45%; height: auto"/>
+  <img src="/assets/images/aboutme/bhangra_1.jpg" alt="Image 2" style="width:400px; height:550px; margin-top: 60px;"/>
+</div>

@@ -2,7 +2,7 @@
 layout: home
 permalink: "/"
 title: "Aanya Rustogi"
-description: "Software engineer with expertise in machine learning, generative AI and embedded systems."
+description: "Software engineer with expertise in machine learning, generative AI, and embedded systems."
 meta_description: ""
 meta_title: 
 subscribe: false
