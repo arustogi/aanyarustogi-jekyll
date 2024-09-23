@@ -1,50 +1,61 @@
 ---
 layout: project-right
-title: "Academic Learning Resource Optimizer"
-description: "A web application designed to generate personalized and contextually relevant study schedules based on academic documents."
-date: 2024-09-21T10:20:00Z
-weight: 1
-thumbnail: "/assets/images/gen/projects/project-1-1-thumbnail.webp"
-image: "/assets/images/gen/projects/project-1-2.webp"
-categories: ["Development"]
-role: "Lead Developer"
+title: MarketMind - AI-Driven Financial Analysis Platform
+categories: [AI, Financial Analysis, Machine Learning, Data Verification]
+date: 2023-05-22
+client: MarketMind Project
+role: AI Developer
 gallery:
-  - image: "/assets/images/gen/projects/project-1-1.webp"
-    caption: "<strong>Above:</strong> Personalized study schedule generation interface."
-  - image: "/assets/images/gen/projects/project-1-2.webp"
-    caption: "<strong>Above:</strong> Example of a generated study plan."
-gallery_limit: 2
+  - image: /assets/images/verification.png
+    caption: Verification Agent Process
+  - image: /assets/images/agent-chain.png
+    caption: Full Agent Chain Flow
+---
+## Overview
+**MarketMind** is an AI-powered platform designed to provide real-time, accurate financial analysis. It integrates multiple AI agents to process stock market data, verify information, and deliver actionable insights. By using various APIs and financial data sources, the platform helps investors make informed decisions through robust data verification, stock analysis, and insight generation.
+
+The system uses LangChain agents and OpenAI's models to provide financial data, verify it, and break down complex metrics into easy-to-understand insights. Users can interact with the platform via a sleek, intuitive Streamlit interface that allows them to query financial data, verify its accuracy, and gain deep insights through powerful visualizations.
+
 ---
 
-The **Academic Learning Resource Optimizer** is a web application designed to generate personalized and contextually relevant study schedules. By leveraging document embeddings and deadlines extracted from uploaded academic materials, the application produces a structured study plan that accurately references the content of the materials. This system is built on a serverless architecture using AWS services, ensuring scalability, reliability, and efficiency.
+## Key Features
+### **Intent Clarification and Query Refinement**
+The Intent Agent clarifies user queries to ensure that the system provides the exact financial data or analysis being requested. It refines the question and ensures all necessary details are collected before moving to data retrieval.
 
-### Features
+### **Data Retrieval and Analysis**
+The Data Agent extracts relevant financial data from CSV files or APIs and analyzes it to provide the requested financial information. This includes retrieving stock prices, analyzing historical performance, and offering predictive insights.
 
-- **Document Upload & Embedding Generation**: Users can upload academic documents. The system generates embeddings representing the content of these materials.
-- **Personalized Study Schedule**: The application processes the embeddings and deadlines to create a detailed, day-by-day study schedule, ensuring that each task is aligned with the relevant materials.
-- **Asynchronous Processing**: Handles large datasets by separating the schedule generation into background processes, allowing for efficient handling and improved user experience.
-- **Responsive User Interface**: A clean and intuitive React-based frontend that allows users to easily interact with the system, upload documents, and view generated schedules in a tabular format.
-- **Serverless Architecture**: Built using AWS Lambda, DynamoDB, and API Gateway to ensure scalability, reliability, and security.
+### **Data Verification**
+A dedicated Verification Agent checks the accuracy of the data extracted by the Data Agent. It cross-references the data against reliable sources and ensures that any data discrepancies are addressed before presenting the information to the user.
 
-### Technologies
+### **Insight Generation**
+Using an Insight Agent, MarketMind breaks down complex financial metrics and trends into easy-to-understand insights, offering investors a clearer understanding of market movements and potential investment strategies.
 
-- **Frontend**: React, Axios, Material-UI
-- **Backend**: Node.js, AWS Lambda, DynamoDB, API Gateway, OpenAI GPT-4
-- **APIs**: OpenAI API for generating embeddings and study schedules
-- **Database**: DynamoDB for storing document embeddings and generated schedules
+### **Streamlit User Interface**
+The platform uses Streamlit to provide a clean and user-friendly interface. Users can interact with the AI agents, submit financial queries, and view the results in interactive, data-rich visualizations. The responsive design ensures a smooth experience across all devices.
 
-### Getting Started
+---
 
-#### Prerequisites
+## Technologies Used
+- **Frontend**: Streamlit for interactive data querying and visualization
+- **Backend**: Python and LangChain for implementing AI agents and processing financial data
+- **APIs**:
+  - OpenAI API for language models and embeddings
+  - Alpha Vantage API for stock market data
+  - Twitter API for sentiment analysis
+- **Database**: CSV and DeepLake Database for storing financial data and embeddings
 
-- Node.js
-- AWS account with access to Lambda, DynamoDB, and API Gateway
-- OpenAI API key
+---
 
-#### Installation
+## How It Works
+1. **Query Submission**: Users submit financial queries via the Streamlit interface.
+2. **Intent Clarification**: The Intent Agent refines and clarifies the query to ensure the system retrieves the most relevant data.
+3. **Data Retrieval**: The Data Agent fetches financial data from CSV files or APIs such as Alpha Vantage.
+4. **Data Verification**: The Verification Agent checks the accuracy of the data before presenting it to the user.
+5. **Insight Generation**: The system uses the Insight Agent to generate simplified explanations and insights from the financial data.
+6. **Visual Feedback**: The results are presented in an interactive dashboard, offering users a clear overview of the requested financial data and insights.
 
-**Clone the Repository:**
+---
 
-```bash
-git clone https://github.com/your-username/context-aware-study-schedule-generator.git
-cd context-aware-study-schedule-generator
+## Visual Gallery
+Explore the visual representation of **MarketMind** features and architecture:

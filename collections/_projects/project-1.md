@@ -1,25 +1,117 @@
 ---
-layout: project # alternative layouts: project, project-left, project-right, project-top
-title: "Water Works Revitalisation"
-description: "Breathing new life into old industrial estates"
-date: 2018-12-20
-weight: 3
-thumbnail: "/assets/images/gen/projects/project-2-1-thumbnail.webp"
-image: "/assets/images/gen/projects/project-2-1.webp"
-categories: ["Development"]
-client: "Brisbane City Council"
-role: "Building Designer"
+layout: project-top
+title: "Academic Resource Optimizer"
+description: "A serverless web application for personalized and contextually relevant study schedules"
+date: 2024-05-21
+weight: 4
+permalink: /projects/project-4
+thumbnail: "/assets/images/gen/projects/Academic1.webp"
+image: "/assets/images/gen/projects/Academic3.webp"
+categories: ["Topics: Development, AI, Education"]
+role: "Full Stack Developer"
 gallery:
-  - image: "/assets/images/gen/projects/project-2-1.webp"
-  - image: "/assets/images/gen/projects/project-2-2.webp"
-  - image: "/assets/images/gen/projects/project-2-5.webp"
-  - image: "/assets/images/gen/projects/project-2-4.webp"
-  - image: "/assets/images/gen/projects/project-2-3.webp"
-  - image: "/assets/images/gen/projects/project-2-6.webp"
+  - image: "/assets/images/gen/projects/Academic2.png"
+  - image: "/assets/images/gen/projects/Academic7.png"
+---
+## Overview
+**Academic Resource Optimizer** is a cutting-edge web application designed to revolutionize how students manage their study schedules. By leveraging the power of machine learning, document embeddings, and a serverless architecture, the app generates personalized and contextually relevant study plans. These plans are intelligently created by analyzing the content of uploaded academic materials and aligning tasks with upcoming deadlines.
+
+Built on a highly scalable and secure serverless architecture using AWS services, this application ensures that each user's study needs are met with precision and efficiency. 
+
+Whether you're preparing for exams or juggling multiple assignments, **Academic Resource Optimizer** gives you the ability to stay organized and focused with a structured day-by-day study plan.
+
 ---
 
-Architecture is both the process and the product of planning, designing, and constructing buildings or other structures.Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art.
+## Key Features
+### **Document Upload & Embedding Generation**
+Users can easily upload academic documents (PDFs, notes, past papers, etc.), and the system will automatically generate embeddings that represent the core content. These embeddings form the backbone of the study schedule, ensuring that each task is directly tied to relevant materials.
 
-The practice, which began in the prehistoric era, has been used as a way of expressing culture for civilizations on all seven continents.
+### **Personalized Study Schedules**
+The app goes beyond basic planning—it uses the generated embeddings and user-provided deadlines to produce an accurate, dynamic study schedule. Each task is aligned with specific sections of the uploaded documents, ensuring you know exactly what to focus on and when.
 
-Architecture began as rural, oral vernacular architecture that developed from trial and error to successful replication. Ancient urban architecture was preoccupied with building religious structures and buildings symbolizing the political power of rulers until Greek and Roman architecture shifted focus to civic virtues.
+### **Asynchronous Background Processing**
+To handle large datasets and complex schedules, the application uses asynchronous processing to manage the study schedule generation. Users can upload extensive materials, and the system will efficiently generate their personalized plans in the background, allowing them to continue with other tasks seamlessly.
+
+### **Responsive User Interface**
+Built with React, the app offers a clean, intuitive interface that provides users with a seamless experience. Users can easily upload their documents, view the generated schedules in a clear tabular format, and adjust deadlines to see instant updates. The interface is mobile-friendly, ensuring that students can access their schedules from anywhere, on any device.
+
+### **Serverless & Scalable Architecture**
+Powered by AWS Lambda, DynamoDB, and API Gateway, the system ensures scalability, security, and reliability. Whether you're an individual student or part of a larger educational institution, **Academic Resource Optimizer** is designed to handle a wide range of workloads, providing high performance even under heavy usage.
+
+---
+
+## Technologies Used
+- **Frontend**: React, Axios, Material-UI for a responsive, dynamic user experience.
+- **Backend**: Node.js with AWS Lambda for serverless, event-driven logic handling.
+- **Database**: DynamoDB for storing document embeddings and generated study schedules, ensuring fast retrieval and scalability.
+- **APIs**:
+  - OpenAI GPT-4 for generating embeddings based on uploaded academic documents.
+  - AWS API Gateway for secure API handling and request routing.
+  
+---
+
+## How It Works
+1. **Document Upload**: Users upload academic documents (such as textbooks, notes, or past exams) through the simple drag-and-drop interface.
+2. **Embedding Generation**: Using OpenAI's API, the system generates embeddings that represent the content of these documents.
+3. **Schedule Creation**: With deadlines provided by the user, the system creates a study schedule based on the document embeddings, assigning tasks to specific days leading up to each deadline.
+4. **Responsive Feedback**: The user receives a well-organized, day-by-day study schedule that is easily adjustable, providing flexibility in case of changing deadlines.
+
+---
+
+## Visual Gallery
+Explore the sleek design and functionality of **Academic Resource Optimizer**:
+
+</div>
+
+<head>
+  <style>
+    .image-container {
+      display: inline-block; /* Adjusts container to the image's size */
+      border: 2px solid #000;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      max-width: 100%; /* Prevents the container from being wider than the screen */
+    }
+
+    .image-container img {
+      width: 100%; /* Fills the container's width */
+      height: auto; /* Keeps the aspect ratio of the image */
+    }
+
+    .image-container .caption {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <!-- First image with border and caption -->
+  <div class="image-container">
+    <img src="/assets/images/gen/projects/Academic4.webp" />
+    <div class="caption">React UI to upload documentss with metadata and embed them</div>
+  </div>
+  
+  <!-- Second image with border and caption -->
+  <div class="image-container">
+    <img src="/assets/images/gen/projects/Academic5.webp" />
+    <div class="caption">AWS Dynamo Tables</div>
+  </div>
+  
+  <!-- Third image with border and caption -->
+  <div class="image-container">
+    <img src="/assets/images/gen/projects/Academic6.png" />
+    <div class="caption">API Gateway Resources</div>
+  </div>
+</div>
+
+
+---
+
+## Conclusion
+**Academic Resource Optimizer** offers a unique, AI-driven approach to student productivity. With the ability to break down complex materials and deadlines into a clear, manageable study plan, this application transforms how students approach their academic responsibilities. 
+
+It’s the ultimate tool for anyone looking to optimize their learning process, manage their time effectively, and excel academically.
+
+---

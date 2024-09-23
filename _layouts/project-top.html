@@ -34,7 +34,7 @@ body_classes: page-project
     <div class="gallery gallery-two-column">
       {% for item in page.gallery limit: 2 %}
       <div class="gallery-item">
-        <div class="gallery-image"><img src="{{ item.image | relative_url }}" style="border: 2px solid #000;  display: block;"/></div>
+        <div class="gallery-image"><img src="{{ item.image | relative_url }}" style=" display: block;"/></div>
         <div class="gallery-caption">{{ item.caption }}</div>
       </div>
       {% endfor %}
@@ -43,11 +43,18 @@ body_classes: page-project
     
     <!-- Horizontal line for separation -->
     <hr />
+   <div>
+
+
+
+   </div>
 
     <div id="center">
       {% if page.title %}
       <div class="project-heading">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ 
+          
+          page.title }}</h1>
       </div>
       {% endif %}
       <p> Click here for <a href="https://github.com/arustogi/academic-learning-resource-optimizer.git" target="_blank" class="github-link" style="color: blue; text-decoration: underline;">GitHub</a>.</p>

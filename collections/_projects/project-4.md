@@ -11,7 +11,7 @@ categories: ["Topics: Development, AI, Education"]
 role: "Full Stack Developer"
 gallery:
   - image: "/assets/images/gen/projects/Academic2.png"
-  - image: "/assets/images/gen/projects/Academic3.webp"
+  - image: "/assets/images/gen/projects/Academic7.png"
 ---
 ## Overview
 **Academic Resource Optimizer** is a cutting-edge web application designed to revolutionize how students manage their study schedules. By leveraging the power of machine learning, document embeddings, and a serverless architecture, the app generates personalized and contextually relevant study plans. These plans are intelligently created by analyzing the content of uploaded academic materials and aligning tasks with upcoming deadlines.
@@ -61,10 +61,51 @@ Powered by AWS Lambda, DynamoDB, and API Gateway, the system ensures scalability
 ## Visual Gallery
 Explore the sleek design and functionality of **Academic Resource Optimizer**:
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="/assets/images/gen/projects/Academic4.webp" />
-  
 </div>
+
+<head>
+  <style>
+    .image-container {
+      display: inline-block; /* Adjusts container to the image's size */
+      border: 2px solid #000;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      max-width: 100%; /* Prevents the container from being wider than the screen */
+    }
+
+    .image-container img {
+      width: 100%; /* Fills the container's width */
+      height: auto; /* Keeps the aspect ratio of the image */
+    }
+
+    .image-container .caption {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <!-- First image with border and caption -->
+  <div class="image-container">
+    <img src="/assets/images/gen/projects/Academic4.webp" />
+    <div class="caption">React UI to upload documentss with metadata and embed them</div>
+  </div>
+  
+  <!-- Second image with border and caption -->
+  <div class="image-container">
+    <img src="/assets/images/gen/projects/Academic5.webp" />
+    <div class="caption">AWS Dynamo Tables</div>
+  </div>
+  
+  <!-- Third image with border and caption -->
+  <div class="image-container">
+    <img src="/assets/images/gen/projects/Academic6.png" />
+    <div class="caption">API Gateway Resources</div>
+  </div>
+</div>
+
 
 ---
 
